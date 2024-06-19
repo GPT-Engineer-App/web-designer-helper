@@ -32,7 +32,7 @@ const Contact = () => {
             <FormLabel>Message</FormLabel>
             <Textarea name="message" value={formData.message} onChange={handleChange} />
           </FormControl>
-          <Button type="submit" colorScheme="brand.900" size="lg">Submit</Button>
+          <Button type="submit" colorScheme="teal" size="lg">Submit</Button>
         </VStack>
       </form>
     </Box>

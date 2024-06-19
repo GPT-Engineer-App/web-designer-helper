@@ -12,7 +12,7 @@ const Merchandise = () => {
       <Heading as="h2" size="xl" mb={6}>Our Merchandise</Heading>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         {products.map(product => (
-          <Box key={product.id} borderWidth="1px" borderColor="brand.900" borderRadius="lg" overflow="hidden">
+          <Box key={product.id} borderWidth="1px" borderRadius="lg" overflow="hidden">
             <Image src={product.image} alt={product.name} />
             <VStack p={4} align="start">
               <Heading as="h3" size="md">{product.name}</Heading>
