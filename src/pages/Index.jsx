@@ -1,5 +1,6 @@
 import { Container, Text, VStack, Heading, Button, SimpleGrid, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import fishingPerson from "/images/fishing_person.jpg";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
         <Image src="/images/fishing1.jpg" alt="Fishing at sunset" />
         <Image src="/images/fishing2.jpg" alt="Fishing boat on calm sea" />
         <Image src="/images/fishing3.jpg" alt="Fisherman with a big catch" />
+        <Image src={fishingPerson} alt="Person catching a fish" />
       </SimpleGrid>
     </Container>
   );
