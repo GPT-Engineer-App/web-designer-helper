@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+    <Container centerContent maxW="container.md" minHeight="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
         <Heading as="h1" size="2xl" color="brand.400">Welcome to Noah's Ark Fishing</Heading>
         <Text fontSize="xl" color="brand.400">Explore our merchandise and get in touch with us!</Text>
