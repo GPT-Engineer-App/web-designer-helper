@@ -21,26 +21,28 @@ const Merchandise = () => {
 
   return (
     <Box p={4}>
-      <Heading as="h2" size="xl" mb={6}>Our Merchandise</Heading>
+      <Heading as="h2" size="xl" mb={6} color="brand.400">Our Merchandise</Heading>
       <InputGroup mb={6}>
         <InputLeftElement pointerEvents="none">
-          <Icon as={FaSearch} color="gray.300" />
+          <Icon as={FaSearch} color="brand.600" />
         </InputLeftElement>
         <Input
           type="text"
           placeholder="Search products"
           value={searchQuery}
           onChange={handleSearchChange}
+          bg="brand.500"
+          color="brand.900"
         />
       </InputGroup>
       
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         {filteredProducts.map(product => (
-          <Box key={product.id} borderWidth="1px" borderRadius="lg" overflow="hidden">
+          <Box key={product.id} borderWidth="1px" borderRadius="lg" overflow="hidden" bg="brand.500">
             <Image src={product.image} alt={product.name} />
             <VStack p={4} align="start">
-              <Heading as="h3" size="md">{product.name}</Heading>
-              <Text>{product.description}</Text>
+              <Heading as="h3" size="md" color="brand.900">{product.name}</Heading>
+              <Text color="brand.900">{product.description}</Text>
             </VStack>
           </Box>
         ))}
