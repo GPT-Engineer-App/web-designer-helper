@@ -6,7 +6,7 @@ const Navbar = () => {
     <Box bg="teal.500" px={4}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <Box>
-          <Link as={RouterLink} to="/" color="white" fontSize="xl" fontWeight="bold">Business</Link>
+          <Link as={RouterLink} to="/" color="white" fontSize="xl" fontWeight="bold">Noah's Ark Fishing</Link>
         </Box>
         <Flex alignItems="center">
           <Link as={RouterLink} to="/merchandise" color="white" mr={4}>Merchandise</Link>
