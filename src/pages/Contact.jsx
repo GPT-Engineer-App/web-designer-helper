@@ -16,23 +16,23 @@ const Contact = () => {
   };
 
   return (
-    <Box p={4}>
-      <Heading as="h2" size="xl" mb={6}>Contact Us</Heading>
+    <Box p={4} bg="gray.50">
+      <Heading as="h2" size="xl" mb={6} color="gray.800">Contact Us</Heading>
       <form onSubmit={handleSubmit}>
         <VStack spacing={4}>
           <FormControl id="name" isRequired>
-            <FormLabel>Name</FormLabel>
-            <Input name="name" value={formData.name} onChange={handleChange} />
+            <FormLabel color="gray.800">Name</FormLabel>
+            <Input name="name" value={formData.name} onChange={handleChange} bg="white" color="gray.800" />
           </FormControl>
           <FormControl id="email" isRequired>
-            <FormLabel>Email</FormLabel>
-            <Input type="email" name="email" value={formData.email} onChange={handleChange} />
+            <FormLabel color="gray.800">Email</FormLabel>
+            <Input type="email" name="email" value={formData.email} onChange={handleChange} bg="white" color="gray.800" />
           </FormControl>
           <FormControl id="message" isRequired>
-            <FormLabel>Message</FormLabel>
-            <Textarea name="message" value={formData.message} onChange={handleChange} />
+            <FormLabel color="gray.800">Message</FormLabel>
+            <Textarea name="message" value={formData.message} onChange={handleChange} bg="white" color="gray.800" />
           </FormControl>
-          <Button type="submit" colorScheme="teal" size="lg">Submit</Button>
+          <Button type="submit" colorScheme="black" size="lg">Submit</Button>
         </VStack>
       </form>
     </Box>
